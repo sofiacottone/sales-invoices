@@ -22,6 +22,11 @@ class Router
         $this->add('POST', $uri, $controller);
     }
 
+    public function patch($uri, $controller)
+    {
+        $this->add('PATCH', $uri, $controller);
+    }
+
     // handle existing routes or abort
     public function routeToController($uri, $method)
     {
